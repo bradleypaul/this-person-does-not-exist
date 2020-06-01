@@ -13,7 +13,7 @@ def random_filename():
 
 
 def fetch(num_of_images=1):
-    for i in range(num_of_images):
+    for _ in range(num_of_images):
         response = requests.get(URL, stream=True)
         if response.status_code == 200:
             binary = (response.content)
